@@ -3,7 +3,7 @@
   "summary": {
     "OK": 36,
     "CAPACITY": 2,
-    "ERROR": 1,
+    "ERROR": 0,
     "TIMEOUT": 0,
     "total": 39
   },
@@ -17,11 +17,6 @@
       "status": "CAPACITY",
       "region": "westeurope",
       "detail": "capacity exhausted (AKSCapacityHeavyUsage)"
-    },
-    {
-      "status": "ERROR",
-      "region": "francesouth",
-      "detail": "resource group creation failed"
     },
     {
       "status": "OK",

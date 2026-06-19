@@ -81,10 +81,10 @@ Source = GitHub Actions*; the URL then appears in the workflow summary.
 ## Setting up the automation
 
 1. **GitHub Pages**: *Settings → Pages → Source = "GitHub Actions"*.
-2. **Azure connection (OIDC)**: create a *federated credential* for this
-   repository and set the secrets `AZURE_CLIENT_ID`, `AZURE_TENANT_ID` and
-   `AZURE_SUBSCRIPTION_ID`. The identity must be *Contributor* on the test
-   subscription.
+2. **Azure connection (service principal)**: create a service principal with a
+   client secret and set the secrets `AZURE_CLIENT_ID`, `AZURE_CLIENT_SECRET`,
+   `AZURE_TENANT_ID` and `AZURE_SUBSCRIPTION_ID`. The identity must be
+   *Contributor* on the test subscription.
 3. The [`availability.yml`](.github/workflows/availability.yml) workflow then
    runs every hour (and can be triggered manually via *Run workflow*).
 

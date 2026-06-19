@@ -32,6 +32,12 @@ KEEP="${KEEP:-false}"               # true = do not delete the resources
 TIMEOUT_SECONDS="${TIMEOUT_SECONDS:-900}"   # cap per region (15 min)
 RESULTS_FILE="${RESULTS_FILE:-containerapp-capacity-results.csv}"
 
+# Disaster-recovery / paired regions where a Container App Environment cannot
+# be created even though they may appear in the provider's location list.
+# Excluded from auto-discovery only; explicitly passed regions are kept.
+# Override with a custom list, or set EXCLUDE_REGIONS="" to disable.
+EXCLUDE_REGIONS="${EXCLUDE_REGIONS:-francesouth germanynorth norwaywest switzerlandwest uaecentral australiacentral2 southafricawest brazilsoutheast jioindiacentral}"
+
 # --- Preliminary checks ----------------------------------------------------
 command -v az >/dev/null 2>&1 || { echo "ERROR: Azure CLI (az) not found." >&2; exit 1; }
 az account show >/dev/null 2>&1 || { echo "ERROR: not logged in. Run: az login" >&2; exit 1; }
@@ -60,6 +66,16 @@ if [[ "$state" != "Registered" ]]; then
 fi
 
 # --- Retrieve the regions that support Container Apps ----------------------
+# Drops any region listed in EXCLUDE_REGIONS (reads stdin, writes stdout).
+apply_exclusions() {
+  if [[ -z "${EXCLUDE_REGIONS// /}" ]]; then
+    cat
+    return
+  fi
+  # shellcheck disable=SC2086
+  grep -vxF -f <(printf '%s\n' $EXCLUDE_REGIONS) || true
+}
+
 list_supported_regions() {
   local supported
   supported=$(az provider show --namespace Microsoft.App \
@@ -72,7 +88,7 @@ list_supported_regions() {
       --query "[?metadata.regionType=='Physical'].[displayName, name]" -o tsv 2>/dev/null \
   | while IFS=$'\t' read -r display name; do
       grep -qxF -- "$display" <<<"$supported" && printf '%s\n' "$name"
-    done | sort -u
+    done | sort -u | apply_exclusions
 }
 
 # Region list: provided arguments, otherwise automatic discovery.
@@ -80,6 +96,7 @@ if [[ $# -gt 0 ]]; then
   mapfile -t REGIONS < <(printf '%s\n' "$@" | sort -u)
 else
   echo "Discovering regions that support Container Apps..."
+  [[ -n "${EXCLUDE_REGIONS// /}" ]] && echo "Excluded regions (DR/paired): $EXCLUDE_REGIONS"
   mapfile -t REGIONS < <(list_supported_regions)
 fi
 

@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
 """Convert the capacity test CSV into JSON data for the dashboard.
 
-Generates two files in DATA_DIR:
-  - latest.json  : current state (summary + per-region detail)
-  - history.json : time series of summaries (appends a point on each run)
+Generates three files in DATA_DIR:
+  - latest.json         : current state (summary + per-region detail)
+  - history.json        : time series of summaries (one point per run)
+  - region-history.json  : per-region status time series (shared timestamps),
+                          used by the dashboard to show a region's timeline.
 
 Environment variables:
   RESULTS_CSV  path to the CSV produced by the test script
@@ -55,6 +57,60 @@ def load_history(path: str) -> list[dict]:
         return []
 
 
+def load_region_history(path: str) -> dict:
+    empty = {"timestamps": [], "statuses": {}}
+    if not os.path.exists(path):
+        return empty
+    try:
+        with open(path, encoding="utf-8") as handle:
+            data = json.load(handle)
+    except (json.JSONDecodeError, OSError):
+        return empty
+    if not isinstance(data, dict):
+        return empty
+    timestamps = data.get("timestamps")
+    statuses = data.get("statuses")
+    if not isinstance(timestamps, list) or not isinstance(statuses, dict):
+        return empty
+    return {"timestamps": timestamps, "statuses": statuses}
+
+
+def update_region_history(
+    prev: dict, rows: list[dict[str, str]], now: str, max_history: int
+) -> dict:
+    """Append the current run to the per-region status time series.
+
+    Uses a shared timestamp list plus one status array per region (``null``
+    where a region was not tested in a given run). New regions are backfilled
+    with ``null`` for past runs; everything is trimmed to ``max_history``.
+    """
+    timestamps = list(prev.get("timestamps", []))
+    statuses = {region: list(series) for region, series in prev.get("statuses", {}).items()}
+    prev_len = len(timestamps)
+
+    current = {row["region"]: row["status"] for row in rows}
+    timestamps.append(now)
+
+    for region in set(statuses) | set(current):
+        series = statuses.setdefault(region, [None] * prev_len)
+        if len(series) < prev_len:  # a previous run skipped this region
+            series.extend([None] * (prev_len - len(series)))
+        series.append(current.get(region))
+
+    if len(timestamps) > max_history:
+        cut = len(timestamps) - max_history
+        timestamps = timestamps[cut:]
+        statuses = {region: series[cut:] for region, series in statuses.items()}
+
+    # Drop regions with no data left inside the kept window.
+    statuses = {
+        region: series
+        for region, series in sorted(statuses.items())
+        if any(value is not None for value in series)
+    }
+    return {"generated_at": now, "timestamps": timestamps, "statuses": statuses}
+
+
 def write_json(path: str, payload) -> None:
     with open(path, "w", encoding="utf-8") as handle:
         json.dump(payload, handle, ensure_ascii=False, indent=2)
@@ -87,7 +143,16 @@ def main() -> None:
     history = history[-max_history:]
     write_json(history_path, history)
 
-    print(f"latest.json + history.json written to {data_dir} ({len(history)} points).")
+    region_history_path = os.path.join(data_dir, "region-history.json")
+    region_history = update_region_history(
+        load_region_history(region_history_path), rows, now, max_history
+    )
+    write_json(region_history_path, region_history)
+
+    print(
+        f"latest.json + history.json + region-history.json written to {data_dir} "
+        f"({len(history)} points, {len(region_history['statuses'])} regions)."
+    )
     print(f"Summary: {summary}")
 
 

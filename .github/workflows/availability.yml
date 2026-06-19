@@ -11,7 +11,9 @@ name: Container Apps Availability
 
 on:
   schedule:
-    - cron: "0 * * * *" # every hour (UTC)
+    # Minute 37 (not :00) avoids the top-of-hour congestion where GitHub
+    # frequently delays or silently drops scheduled runs.
+    - cron: "37 * * * *" # every hour (UTC), at minute 37
   workflow_dispatch:
     inputs:
       regions:
@@ -89,17 +91,20 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           set -euo pipefail
-          url="$(gh api "repos/${GITHUB_REPOSITORY}/pages" --jq '.html_url' 2>/dev/null || true)"
-          if [ -z "$url" ]; then
-            url="https://${GITHUB_REPOSITORY_OWNER}.github.io/${GITHUB_REPOSITORY#*/}"
+          base="$(gh api "repos/${GITHUB_REPOSITORY}/pages" --jq '.html_url' 2>/dev/null || true)"
+          if [ -z "$base" ]; then
+            base="https://${GITHUB_REPOSITORY_OWNER}.github.io/${GITHUB_REPOSITORY#*/}"
           fi
-          url="${url%/}/data/history.json"
-          echo "Previous history: $url"
-          if curl -fsSL "$url" -o _site/data/history.json; then
-            echo "History fetched."
-          else
-            echo "No previous history (first run or Pages not published yet)."
-          fi
+          base="${base%/}"
+          for file in history.json region-history.json; do
+            url="${base}/data/${file}"
+            echo "Previous data: $url"
+            if curl -fsSL "$url" -o "_site/data/${file}"; then
+              echo "  fetched ${file}."
+            else
+              echo "  no previous ${file} (first run or Pages not published yet)."
+            fi
+          done
 
       - name: Generate the dashboard data
         env:

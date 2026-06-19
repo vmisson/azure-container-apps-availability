@@ -56,6 +56,9 @@
             <div id="filters" class="filters"></div>
           </div>
         </div>
+        <p class="panel__hint panel__hint--block">
+          Click a region to see its status history.
+        </p>
         <div class="table-wrap">
           <table class="table">
             <thead>
@@ -78,6 +81,18 @@
         page refreshes every 5 min</span
       >
     </footer>
+
+    <div id="modal" class="modal" hidden role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <div class="modal__backdrop" data-close></div>
+      <div class="modal__panel" role="document">
+        <button class="modal__close" type="button" data-close aria-label="Close">×</button>
+        <h3 id="modal-title" class="modal__title">—</h3>
+        <p class="modal__sub">Status of each hourly run (most recent on the right).</p>
+        <div id="modal-stats" class="modal__stats"></div>
+        <div id="modal-timeline" class="modal__timeline"></div>
+        <div id="modal-legend" class="legend"></div>
+      </div>
+    </div>
 
     <script src="app.js" defer></script>
   </body>

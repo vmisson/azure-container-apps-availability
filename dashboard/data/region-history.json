@@ -1,0 +1,122 @@
+{
+  "generated_at": "2026-06-19T15:39:16Z",
+  "timestamps": [
+    "2026-06-19T15:39:16Z"
+  ],
+  "statuses": {
+    "australiaeast": [
+      "OK"
+    ],
+    "australiasoutheast": [
+      "OK"
+    ],
+    "brazilsouth": [
+      "OK"
+    ],
+    "canadacentral": [
+      "OK"
+    ],
+    "canadaeast": [
+      "OK"
+    ],
+    "centralindia": [
+      "OK"
+    ],
+    "centralus": [
+      "OK"
+    ],
+    "eastasia": [
+      "OK"
+    ],
+    "eastus": [
+      "CAPACITY"
+    ],
+    "eastus2": [
+      "OK"
+    ],
+    "francecentral": [
+      "OK"
+    ],
+    "germanywestcentral": [
+      "OK"
+    ],
+    "indonesiacentral": [
+      "OK"
+    ],
+    "italynorth": [
+      "OK"
+    ],
+    "japaneast": [
+      "OK"
+    ],
+    "japanwest": [
+      "OK"
+    ],
+    "jioindiawest": [
+      "OK"
+    ],
+    "koreacentral": [
+      "OK"
+    ],
+    "malaysiawest": [
+      "OK"
+    ],
+    "northcentralus": [
+      "OK"
+    ],
+    "northeurope": [
+      "OK"
+    ],
+    "norwayeast": [
+      "OK"
+    ],
+    "polandcentral": [
+      "OK"
+    ],
+    "southafricanorth": [
+      "OK"
+    ],
+    "southcentralus": [
+      "OK"
+    ],
+    "southeastasia": [
+      "OK"
+    ],
+    "southindia": [
+      "OK"
+    ],
+    "spaincentral": [
+      "OK"
+    ],
+    "swedencentral": [
+      "OK"
+    ],
+    "switzerlandnorth": [
+      "OK"
+    ],
+    "uaenorth": [
+      "OK"
+    ],
+    "uksouth": [
+      "OK"
+    ],
+    "ukwest": [
+      "OK"
+    ],
+    "westcentralus": [
+      "OK"
+    ],
+    "westeurope": [
+      "CAPACITY"
+    ],
+    "westus": [
+      "OK"
+    ],
+    "westus2": [
+      "OK"
+    ],
+    "westus3": [
+      "OK"
+    ]
+  }
+}

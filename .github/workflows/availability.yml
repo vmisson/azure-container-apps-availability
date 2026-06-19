@@ -65,8 +65,16 @@ jobs:
           CONCURRENCY: ${{ github.event.inputs.concurrency || '10' }}
           REGIONS_INPUT: ${{ github.event.inputs.regions }}
           RESULTS_FILE: containerapp-capacity-results.csv
+          RUN_ID: ${{ github.run_id }}
+          RUN_ATTEMPT: ${{ github.run_attempt }}
         run: |
           chmod +x ./test-containerapp-regions.sh
+          # Unique prefix per run so resources never clash with a previous run
+          # whose async deletion may still be in progress. Kept short (<= 9 chars)
+          # to respect the 32-char Container App Environment name limit.
+          PREFIX="ca$(printf '%s-%s' "$RUN_ID" "$RUN_ATTEMPT" | sha1sum | cut -c1-6)"
+          export PREFIX
+          echo "Resource prefix for this run: $PREFIX"
           # REGIONS_INPUT intentionally unquoted to split the regions into arguments.
           # shellcheck disable=SC2086
           ./test-containerapp-regions.sh $REGIONS_INPUT

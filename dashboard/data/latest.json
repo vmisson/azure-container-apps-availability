@@ -1,0 +1,207 @@
+{
+  "generated_at": "2026-06-19T12:43:45Z",
+  "summary": {
+    "OK": 36,
+    "CAPACITY": 2,
+    "ERROR": 1,
+    "TIMEOUT": 0,
+    "total": 39
+  },
+  "regions": [
+    {
+      "status": "CAPACITY",
+      "region": "eastus",
+      "detail": "capacity exhausted (AKSCapacityHeavyUsage)"
+    },
+    {
+      "status": "CAPACITY",
+      "region": "westeurope",
+      "detail": "capacity exhausted (AKSCapacityHeavyUsage)"
+    },
+    {
+      "status": "ERROR",
+      "region": "francesouth",
+      "detail": "resource group creation failed"
+    },
+    {
+      "status": "OK",
+      "region": "australiaeast",
+      "detail": "capacity available"
+    },
+    {
+      "status": "OK",
+      "region": "australiasoutheast",
+      "detail": "capacity available"
+    },
+    {
+      "status": "OK",
+      "region": "brazilsouth",
+      "detail": "capacity available"
+    },
+    {
+      "status": "OK",
+      "region": "canadacentral",
+      "detail": "capacity available"
+    },
+    {
+      "status": "OK",
+      "region": "canadaeast",
+      "detail": "capacity available"
+    },
+    {
+      "status": "OK",
+      "region": "centralindia",
+      "detail": "capacity available"
+    },
+    {
+      "status": "OK",
+      "region": "centralus",
+      "detail": "capacity available"
+    },
+    {
+      "status": "OK",
+      "region": "eastasia",
+      "detail": "capacity available"
+    },
+    {
+      "status": "OK",
+      "region": "eastus2",
+      "detail": "capacity available"
+    },
+    {
+      "status": "OK",
+      "region": "francecentral",
+      "detail": "capacity available"
+    },
+    {
+      "status": "OK",
+      "region": "germanywestcentral",
+      "detail": "capacity available"
+    },
+    {
+      "status": "OK",
+      "region": "indonesiacentral",
+      "detail": "capacity available"
+    },
+    {
+      "status": "OK",
+      "region": "italynorth",
+      "detail": "capacity available"
+    },
+    {
+      "status": "OK",
+      "region": "japaneast",
+      "detail": "capacity available"
+    },
+    {
+      "status": "OK",
+      "region": "japanwest",
+      "detail": "capacity available"
+    },
+    {
+      "status": "OK",
+      "region": "jioindiawest",
+      "detail": "capacity available"
+    },
+    {
+      "status": "OK",
+      "region": "koreacentral",
+      "detail": "capacity available"
+    },
+    {
+      "status": "OK",
+      "region": "malaysiawest",
+      "detail": "capacity available"
+    },
+    {
+      "status": "OK",
+      "region": "northcentralus",
+      "detail": "capacity available"
+    },
+    {
+      "status": "OK",
+      "region": "northeurope",
+      "detail": "capacity available"
+    },
+    {
+      "status": "OK",
+      "region": "norwayeast",
+      "detail": "capacity available"
+    },
+    {
+      "status": "OK",
+      "region": "polandcentral",
+      "detail": "capacity available"
+    },
+    {
+      "status": "OK",
+      "region": "southafricanorth",
+      "detail": "capacity available"
+    },
+    {
+      "status": "OK",
+      "region": "southcentralus",
+      "detail": "capacity available"
+    },
+    {
+      "status": "OK",
+      "region": "southeastasia",
+      "detail": "capacity available"
+    },
+    {
+      "status": "OK",
+      "region": "southindia",
+      "detail": "capacity available"
+    },
+    {
+      "status": "OK",
+      "region": "spaincentral",
+      "detail": "capacity available"
+    },
+    {
+      "status": "OK",
+      "region": "swedencentral",
+      "detail": "capacity available"
+    },
+    {
+      "status": "OK",
+      "region": "switzerlandnorth",
+      "detail": "capacity available"
+    },
+    {
+      "status": "OK",
+      "region": "uaenorth",
+      "detail": "capacity available"
+    },
+    {
+      "status": "OK",
+      "region": "uksouth",
+      "detail": "capacity available"
+    },
+    {
+      "status": "OK",
+      "region": "ukwest",
+      "detail": "capacity available"
+    },
+    {
+      "status": "OK",
+      "region": "westcentralus",
+      "detail": "capacity available"
+    },
+    {
+      "status": "OK",
+      "region": "westus",
+      "detail": "capacity available"
+    },
+    {
+      "status": "OK",
+      "region": "westus2",
+      "detail": "capacity available"
+    },
+    {
+      "status": "OK",
+      "region": "westus3",
+      "detail": "capacity available"
+    }
+  ]
+}

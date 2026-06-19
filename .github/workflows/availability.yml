@@ -1,0 +1,129 @@
+name: Container Apps Availability
+
+# Tests the ability to create a Container App Environment in all regions,
+# then publishes a static dashboard on GitHub Pages.
+#
+# Prerequisites (configure once, see the README/chat):
+#   - Pages enabled: Settings > Pages > Source = "GitHub Actions"
+#   - Azure OIDC connection: secrets AZURE_CLIENT_ID, AZURE_TENANT_ID,
+#     AZURE_SUBSCRIPTION_ID, with a federated credential for this repo and a
+#     Contributor role on the subscription.
+
+on:
+  schedule:
+    - cron: "0 * * * *" # every hour (UTC)
+  workflow_dispatch:
+    inputs:
+      regions:
+        description: "Regions to test (space-separated). Empty = all."
+        required: false
+        default: ""
+      concurrency:
+        description: "Number of regions tested in parallel."
+        required: false
+        default: "10"
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+# A single run at a time; do not cancel a run in progress.
+concurrency:
+  group: availability
+  cancel-in-progress: false
+
+jobs:
+  test-and-publish:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Azure login (OIDC)
+        uses: azure/login@v2
+        with:
+          client-id: ${{ secrets.AZURE_CLIENT_ID }}
+          tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+          subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+
+      - name: Prepare the Azure CLI
+        run: |
+          az config set extension.use_dynamic_install=yes_without_prompt
+          az extension add --name containerapp --only-show-errors || true
+
+      - name: Test availability per region
+        env:
+          # Inputs passed via env (never interpolated in the script => no injection).
+          CONCURRENCY: ${{ github.event.inputs.concurrency || '10' }}
+          REGIONS_INPUT: ${{ github.event.inputs.regions }}
+          RESULTS_FILE: containerapp-capacity-results.csv
+        run: |
+          chmod +x ./test-containerapp-regions.sh
+          # REGIONS_INPUT intentionally unquoted to split the regions into arguments.
+          # shellcheck disable=SC2086
+          ./test-containerapp-regions.sh $REGIONS_INPUT
+
+      - name: Prepare the publish directory
+        run: |
+          rm -rf _site
+          cp -r dashboard _site
+
+      - name: Fetch the previous history
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          url="$(gh api "repos/${GITHUB_REPOSITORY}/pages" --jq '.html_url' 2>/dev/null || true)"
+          if [ -z "$url" ]; then
+            url="https://${GITHUB_REPOSITORY_OWNER}.github.io/${GITHUB_REPOSITORY#*/}"
+          fi
+          url="${url%/}/data/history.json"
+          echo "Previous history: $url"
+          if curl -fsSL "$url" -o _site/data/history.json; then
+            echo "History fetched."
+          else
+            echo "No previous history (first run or Pages not published yet)."
+          fi
+
+      - name: Generate the dashboard data
+        env:
+          RESULTS_CSV: containerapp-capacity-results.csv
+          DATA_DIR: _site/data
+          MAX_HISTORY: "336"
+        run: python3 scripts/build-dashboard-data.py
+
+      - name: Generate the README dashboard block
+        env:
+          DATA_DIR: _site/data
+          README_PATH: README.md
+          ASSETS_DIR: assets
+        run: python3 scripts/render-readme.py
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload the Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+      - name: Deploy to GitHub Pages
+        id: deploy
+        uses: actions/deploy-pages@v4
+
+      - name: Commit the README dashboard
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md assets/history-light.svg assets/history-dark.svg
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "chore(dashboard): automatic README update [skip ci]"
+            git push
+          fi

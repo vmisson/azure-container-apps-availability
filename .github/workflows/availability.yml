@@ -11,9 +11,9 @@ name: Container Apps Availability
 
 on:
   schedule:
-    # Minute 37 (not :00) avoids the top-of-hour congestion where GitHub
+    # Minute 45 (not :00) avoids the top-of-hour congestion where GitHub
     # frequently delays or silently drops scheduled runs.
-    - cron: "37 * * * *" # every hour (UTC), at minute 37
+    - cron: "45 * * * *" # every hour (UTC), at minute 37
   workflow_dispatch:
     inputs:
       regions:

@@ -11,9 +11,9 @@ name: Container Apps Availability
 
 on:
   schedule:
-    # Minute 45 (not :00) avoids the top-of-hour congestion where GitHub
+    # Minute 20 (not :00) avoids the top-of-hour congestion where GitHub
     # frequently delays or silently drops scheduled runs.
-    - cron: "45 * * * *" # every hour (UTC), at minute 37
+    - cron: "20 * * * *" # every hour (UTC), at minute 20
   workflow_dispatch:
     inputs:
       regions:
@@ -37,7 +37,7 @@ concurrency:
 
 jobs:
   test-and-publish:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     environment:
       name: github-pages
       url: ${{ steps.deploy.outputs.page_url }}

@@ -10,10 +10,9 @@ name: Container Apps Availability
 #     subscription.
 
 on:
-  schedule:
-    # Minute 20 (not :00) avoids the top-of-hour congestion where GitHub
-    # frequently delays or silently drops scheduled runs.
-    - cron: "20 */2 * * *" # every 2 hours (UTC), at minute 20
+  # Scheduling is handled externally by an Azure Logic App that calls the
+  # workflow_dispatch API hourly. GitHub's own scheduled cron is unreliable
+  # (runs delayed or silently dropped), so it is intentionally not used here.
   workflow_dispatch:
     inputs:
       regions:
@@ -37,7 +36,7 @@ concurrency:
 
 jobs:
   test-and-publish:
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     environment:
       name: github-pages
       url: ${{ steps.deploy.outputs.page_url }}

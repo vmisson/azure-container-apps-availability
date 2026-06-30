@@ -11,9 +11,9 @@ automatically) and on an interactive dashboard via GitHub Pages.
 <!-- DASHBOARD:START -->
 ## 🌍 Azure Container Apps availability
 
-> Capacity to create a Container App Environment per region · automatically updated on **2026-06-30 00:34 UTC**.
+> Capacity to create a Container App Environment per region · automatically updated on **2026-06-30 01:29 UTC**.
 
-![Available](https://img.shields.io/badge/Available-32-22c55e?style=flat-square) ![Saturated](https://img.shields.io/badge/Saturated-3-f59e0b?style=flat-square) ![Error](https://img.shields.io/badge/Error-3-ef4444?style=flat-square) ![Timeout](https://img.shields.io/badge/Timeout-0-a855f7?style=flat-square) ![Total](https://img.shields.io/badge/Total%20tested-38-4f8cff?style=flat-square)
+![Available](https://img.shields.io/badge/Available-34-22c55e?style=flat-square) ![Saturated](https://img.shields.io/badge/Saturated-2-f59e0b?style=flat-square) ![Error](https://img.shields.io/badge/Error-2-ef4444?style=flat-square) ![Timeout](https://img.shields.io/badge/Timeout-0-a855f7?style=flat-square) ![Total](https://img.shields.io/badge/Total%20tested-38-4f8cff?style=flat-square)
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/history-dark.svg" />
@@ -26,15 +26,13 @@ automatically) and on an interactive dashboard via GitHub Pages.
 | :--- | :--- | :--- |
 | 🟠 Saturated | `eastus` | capacity exhausted (AKSCapacityHeavyUsage) |
 | 🟠 Saturated | `germanywestcentral` | capacity exhausted (AKSCapacityHeavyUsage) |
-| 🟠 Saturated | `westus3` | capacity exhausted (AKSCapacityHeavyUsage) |
 | 🔴 Error | `indonesiacentral` | ERROR: (ManagedEnvironmentNoAvailableCapacityInRegion) No capacity available in this region for provisioning an environment, please try again in another region. |
 | 🔴 Error | `malaysiawest` | ERROR: (ManagedEnvironmentNoAvailableCapacityInRegion) No capacity available in this region for provisioning an environment, please try again in another region. |
-| 🔴 Error | `westus2` | / Running .. \| Running .. \ Running .. - Running .. / Running .. \| Running .. \ Running .. - Running .. / Running .. \| Running .. \ Running .. - Running .. / Running .. \| Running .. \ Running .. - Ru |
 
 <details>
-<summary>🟢 32 available regions</summary>
+<summary>🟢 34 available regions</summary>
 
-`australiaeast`, `australiasoutheast`, `brazilsouth`, `canadacentral`, `canadaeast`, `centralindia`, `centralus`, `eastasia`, `eastus2`, `francecentral`, `italynorth`, `japaneast`, `japanwest`, `jioindiawest`, `koreacentral`, `northcentralus`, `northeurope`, `norwayeast`, `polandcentral`, `southafricanorth`, `southcentralus`, `southeastasia`, `southindia`, `spaincentral`, `swedencentral`, `switzerlandnorth`, `uaenorth`, `uksouth`, `ukwest`, `westcentralus`, `westeurope`, `westus`
+`australiaeast`, `australiasoutheast`, `brazilsouth`, `canadacentral`, `canadaeast`, `centralindia`, `centralus`, `eastasia`, `eastus2`, `francecentral`, `italynorth`, `japaneast`, `japanwest`, `jioindiawest`, `koreacentral`, `northcentralus`, `northeurope`, `norwayeast`, `polandcentral`, `southafricanorth`, `southcentralus`, `southeastasia`, `southindia`, `spaincentral`, `swedencentral`, `switzerlandnorth`, `uaenorth`, `uksouth`, `ukwest`, `westcentralus`, `westeurope`, `westus`, `westus2`, `westus3`
 
 </details>
 

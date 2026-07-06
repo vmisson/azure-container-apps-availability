@@ -11,7 +11,7 @@ automatically) and on an interactive dashboard via GitHub Pages.
 <!-- DASHBOARD:START -->
 ## 🌍 Azure Container Apps availability
 
-> Capacity to create a Container App Environment per region · automatically updated on **2026-07-06 03:29 UTC**.
+> Capacity to create a Container App Environment per region · automatically updated on **2026-07-06 04:29 UTC**.
 
 ![Available](https://img.shields.io/badge/Available-37-22c55e?style=flat-square) ![Saturated](https://img.shields.io/badge/Saturated-0-f59e0b?style=flat-square) ![Error](https://img.shields.io/badge/Error-1-ef4444?style=flat-square) ![Timeout](https://img.shields.io/badge/Timeout-0-a855f7?style=flat-square) ![Total](https://img.shields.io/badge/Total%20tested-38-4f8cff?style=flat-square)
 
@@ -24,7 +24,7 @@ automatically) and on an interactive dashboard via GitHub Pages.
 
 | Status | Region | Detail |
 | :--- | :--- | :--- |
-| 🔴 Error | `indonesiacentral` | ERROR: The command failed with an unexpected error. Here is the traceback: ERROR: Expecting property name enclosed in double quotes: line 2 column 17 (char 19) Traceback (most recent call last): File |
+| 🔴 Error | `indonesiacentral` | ERROR: The command failed with an unexpected error. Here is the traceback: ERROR: Expecting property name enclosed in double quotes: line 1 column 2 (char 1) Traceback (most recent call last): File /" |
 
 <details>
 <summary>🟢 37 available regions</summary>

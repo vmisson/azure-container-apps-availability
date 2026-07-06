@@ -11,9 +11,9 @@ automatically) and on an interactive dashboard via GitHub Pages.
 <!-- DASHBOARD:START -->
 ## 🌍 Azure Container Apps availability
 
-> Capacity to create a Container App Environment per region · automatically updated on **2026-07-06 15:29 UTC**.
+> Capacity to create a Container App Environment per region · automatically updated on **2026-07-06 16:31 UTC**.
 
-![Available](https://img.shields.io/badge/Available-35-22c55e?style=flat-square) ![Saturated](https://img.shields.io/badge/Saturated-1-f59e0b?style=flat-square) ![Error](https://img.shields.io/badge/Error-2-ef4444?style=flat-square) ![Timeout](https://img.shields.io/badge/Timeout-0-a855f7?style=flat-square) ![Total](https://img.shields.io/badge/Total%20tested-38-4f8cff?style=flat-square)
+![Available](https://img.shields.io/badge/Available-37-22c55e?style=flat-square) ![Saturated](https://img.shields.io/badge/Saturated-1-f59e0b?style=flat-square) ![Error](https://img.shields.io/badge/Error-0-ef4444?style=flat-square) ![Timeout](https://img.shields.io/badge/Timeout-0-a855f7?style=flat-square) ![Total](https://img.shields.io/badge/Total%20tested-38-4f8cff?style=flat-square)
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/history-dark.svg" />
@@ -25,13 +25,11 @@ automatically) and on an interactive dashboard via GitHub Pages.
 | Status | Region | Detail |
 | :--- | :--- | :--- |
 | 🟠 Saturated | `westeurope` | capacity exhausted (AKSCapacityHeavyUsage) |
-| 🔴 Error | `southafricanorth` | / Running .. \| Running .. \ Running .. - Running ..ERROR: The command failed with an unexpected error. Here is the traceback: ERROR: ('Connection aborted.', ConnectionResetError(104, 'Connection rese |
-| 🔴 Error | `uksouth` | / Running .. \| Running .. \ Running .. - Running .. / Running .. \| Running .. \ Running .. - Running .. / Running .. \| Running .. \ Running .. - Running .. / Running .. \| Running .. \ Running .. - Ru |
 
 <details>
-<summary>🟢 35 available regions</summary>
+<summary>🟢 37 available regions</summary>
 
-`australiaeast`, `australiasoutheast`, `brazilsouth`, `canadacentral`, `canadaeast`, `centralindia`, `centralus`, `eastasia`, `eastus`, `eastus2`, `francecentral`, `germanywestcentral`, `indonesiacentral`, `italynorth`, `japaneast`, `japanwest`, `jioindiawest`, `koreacentral`, `malaysiawest`, `northcentralus`, `northeurope`, `norwayeast`, `polandcentral`, `southcentralus`, `southeastasia`, `southindia`, `spaincentral`, `swedencentral`, `switzerlandnorth`, `uaenorth`, `ukwest`, `westcentralus`, `westus`, `westus2`, `westus3`
+`australiaeast`, `australiasoutheast`, `brazilsouth`, `canadacentral`, `canadaeast`, `centralindia`, `centralus`, `eastasia`, `eastus`, `eastus2`, `francecentral`, `germanywestcentral`, `indonesiacentral`, `italynorth`, `japaneast`, `japanwest`, `jioindiawest`, `koreacentral`, `malaysiawest`, `northcentralus`, `northeurope`, `norwayeast`, `polandcentral`, `southafricanorth`, `southcentralus`, `southeastasia`, `southindia`, `spaincentral`, `swedencentral`, `switzerlandnorth`, `uaenorth`, `uksouth`, `ukwest`, `westcentralus`, `westus`, `westus2`, `westus3`
 
 </details>
 

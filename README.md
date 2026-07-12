@@ -11,7 +11,7 @@ automatically) and on an interactive dashboard via GitHub Pages.
 <!-- DASHBOARD:START -->
 ## 🌍 Azure Container Apps availability
 
-> Capacity to create a Container App Environment per region · automatically updated on **2026-07-12 02:30 UTC**.
+> Capacity to create a Container App Environment per region · automatically updated on **2026-07-12 03:29 UTC**.
 
 ![Available](https://img.shields.io/badge/Available-37-22c55e?style=flat-square) ![Saturated](https://img.shields.io/badge/Saturated-1-f59e0b?style=flat-square) ![Error](https://img.shields.io/badge/Error-0-ef4444?style=flat-square) ![Timeout](https://img.shields.io/badge/Timeout-0-a855f7?style=flat-square) ![Total](https://img.shields.io/badge/Total%20tested-38-4f8cff?style=flat-square)
 

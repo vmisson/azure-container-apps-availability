@@ -11,9 +11,9 @@ automatically) and on an interactive dashboard via GitHub Pages.
 <!-- DASHBOARD:START -->
 ## 🌍 Azure Container Apps availability
 
-> Capacity to create a Container App Environment per region · automatically updated on **2026-07-16 03:29 UTC**.
+> Capacity to create a Container App Environment per region · automatically updated on **2026-07-16 04:41 UTC**.
 
-![Available](https://img.shields.io/badge/Available-35-22c55e?style=flat-square) ![Saturated](https://img.shields.io/badge/Saturated-3-f59e0b?style=flat-square) ![Error](https://img.shields.io/badge/Error-0-ef4444?style=flat-square) ![Timeout](https://img.shields.io/badge/Timeout-0-a855f7?style=flat-square) ![Total](https://img.shields.io/badge/Total%20tested-38-4f8cff?style=flat-square)
+![Available](https://img.shields.io/badge/Available-34-22c55e?style=flat-square) ![Saturated](https://img.shields.io/badge/Saturated-3-f59e0b?style=flat-square) ![Error](https://img.shields.io/badge/Error-1-ef4444?style=flat-square) ![Timeout](https://img.shields.io/badge/Timeout-0-a855f7?style=flat-square) ![Total](https://img.shields.io/badge/Total%20tested-38-4f8cff?style=flat-square)
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/history-dark.svg" />
@@ -27,11 +27,12 @@ automatically) and on an interactive dashboard via GitHub Pages.
 | 🟠 Saturated | `centralus` | capacity exhausted (AKSCapacityHeavyUsage) |
 | 🟠 Saturated | `eastus` | capacity exhausted (AKSCapacityHeavyUsage) |
 | 🟠 Saturated | `swedencentral` | capacity exhausted (AKSCapacityHeavyUsage) |
+| 🔴 Error | `westus` | ERROR: (ManagedEnvironmentAllocationError) Failed to allocate managed environment. Please try again. |
 
 <details>
-<summary>🟢 35 available regions</summary>
+<summary>🟢 34 available regions</summary>
 
-`australiaeast`, `australiasoutheast`, `brazilsouth`, `canadacentral`, `canadaeast`, `centralindia`, `eastasia`, `eastus2`, `francecentral`, `germanywestcentral`, `indonesiacentral`, `italynorth`, `japaneast`, `japanwest`, `jioindiawest`, `koreacentral`, `malaysiawest`, `northcentralus`, `northeurope`, `norwayeast`, `polandcentral`, `southafricanorth`, `southcentralus`, `southeastasia`, `southindia`, `spaincentral`, `switzerlandnorth`, `uaenorth`, `uksouth`, `ukwest`, `westcentralus`, `westeurope`, `westus`, `westus2`, `westus3`
+`australiaeast`, `australiasoutheast`, `brazilsouth`, `canadacentral`, `canadaeast`, `centralindia`, `eastasia`, `eastus2`, `francecentral`, `germanywestcentral`, `indonesiacentral`, `italynorth`, `japaneast`, `japanwest`, `jioindiawest`, `koreacentral`, `malaysiawest`, `northcentralus`, `northeurope`, `norwayeast`, `polandcentral`, `southafricanorth`, `southcentralus`, `southeastasia`, `southindia`, `spaincentral`, `switzerlandnorth`, `uaenorth`, `uksouth`, `ukwest`, `westcentralus`, `westeurope`, `westus2`, `westus3`
 
 </details>
 

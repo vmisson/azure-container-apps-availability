@@ -11,9 +11,9 @@ automatically) and on an interactive dashboard via GitHub Pages.
 <!-- DASHBOARD:START -->
 ## 🌍 Azure Container Apps availability
 
-> Capacity to create a Container App Environment per region · automatically updated on **2026-07-23 05:29 UTC**.
+> Capacity to create a Container App Environment per region · automatically updated on **2026-07-23 06:34 UTC**.
 
-![Available](https://img.shields.io/badge/Available-33-22c55e?style=flat-square) ![Saturated](https://img.shields.io/badge/Saturated-5-f59e0b?style=flat-square) ![Error](https://img.shields.io/badge/Error-4-ef4444?style=flat-square) ![Timeout](https://img.shields.io/badge/Timeout-0-a855f7?style=flat-square) ![Total](https://img.shields.io/badge/Total%20tested-42-4f8cff?style=flat-square)
+![Available](https://img.shields.io/badge/Available-32-22c55e?style=flat-square) ![Saturated](https://img.shields.io/badge/Saturated-5-f59e0b?style=flat-square) ![Error](https://img.shields.io/badge/Error-1-ef4444?style=flat-square) ![Timeout](https://img.shields.io/badge/Timeout-0-a855f7?style=flat-square) ![Total](https://img.shields.io/badge/Total%20tested-38-4f8cff?style=flat-square)
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/history-dark.svg" />
@@ -29,15 +29,12 @@ automatically) and on an interactive dashboard via GitHub Pages.
 | 🟠 Saturated | `germanywestcentral` | capacity exhausted (AKSCapacityHeavyUsage) |
 | 🟠 Saturated | `swedencentral` | capacity exhausted (AKSCapacityHeavyUsage) |
 | 🟠 Saturated | `westeurope` | capacity exhausted (AKSCapacityHeavyUsage) |
-| 🔴 Error | `belgiumcentral` | ERROR: (LocationNotAvailableForResourceType) The provided location 'belgiumcentral' is not available for resource type 'Microsoft.App/managedEnvironments'. List of available regions for the resource t |
-| 🔴 Error | `chilecentral` | ERROR: (LocationNotAvailableForResourceType) The provided location 'chilecentral' is not available for resource type 'Microsoft.App/managedEnvironments'. List of available regions for the resource typ |
-| 🔴 Error | `koreasouth` | / Running .. \| Running .. \ Running .. - Running .. / Running .. \| Running .. \ Running .. - Running .. / Running .. \| Running .. \ Running .. - Running .. / Running .. \| Running .. \ Running .. - Ru |
-| 🔴 Error | `newzealandnorth` | ERROR: (LocationNotAvailableForResourceType) The provided location 'newzealandnorth' is not available for resource type 'Microsoft.App/managedEnvironments'. List of available regions for the resource |
+| 🔴 Error | `malaysiawest` | / Running .. \| Running .. \ Running .. - Running .. / Running .. \| Running .. \ Running ..ERROR: The command failed with an unexpected error. Here is the traceback: ERROR: ('Connection aborted.', Con |
 
 <details>
-<summary>🟢 33 available regions</summary>
+<summary>🟢 32 available regions</summary>
 
-`australiaeast`, `australiasoutheast`, `brazilsouth`, `canadacentral`, `canadaeast`, `centralindia`, `eastasia`, `eastus2`, `francecentral`, `indonesiacentral`, `italynorth`, `japaneast`, `japanwest`, `jioindiawest`, `koreacentral`, `malaysiawest`, `northcentralus`, `northeurope`, `norwayeast`, `polandcentral`, `southafricanorth`, `southcentralus`, `southeastasia`, `southindia`, `spaincentral`, `switzerlandnorth`, `uaenorth`, `uksouth`, `ukwest`, `westcentralus`, `westus`, `westus2`, `westus3`
+`australiaeast`, `australiasoutheast`, `brazilsouth`, `canadacentral`, `canadaeast`, `centralindia`, `eastasia`, `eastus2`, `francecentral`, `indonesiacentral`, `italynorth`, `japaneast`, `japanwest`, `jioindiawest`, `koreacentral`, `northcentralus`, `northeurope`, `norwayeast`, `polandcentral`, `southafricanorth`, `southcentralus`, `southeastasia`, `southindia`, `spaincentral`, `switzerlandnorth`, `uaenorth`, `uksouth`, `ukwest`, `westcentralus`, `westus`, `westus2`, `westus3`
 
 </details>
 

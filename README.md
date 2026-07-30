@@ -11,9 +11,9 @@ automatically) and on an interactive dashboard via GitHub Pages.
 <!-- DASHBOARD:START -->
 ## 🌍 Azure Container Apps availability
 
-> Capacity to create a Container App Environment per region · automatically updated on **2026-07-30 17:30 UTC**.
+> Capacity to create a Container App Environment per region · automatically updated on **2026-07-30 18:43 UTC**.
 
-![Available](https://img.shields.io/badge/Available-38-22c55e?style=flat-square) ![Saturated](https://img.shields.io/badge/Saturated-4-f59e0b?style=flat-square) ![Error](https://img.shields.io/badge/Error-0-ef4444?style=flat-square) ![Timeout](https://img.shields.io/badge/Timeout-0-a855f7?style=flat-square) ![Total](https://img.shields.io/badge/Total%20tested-42-4f8cff?style=flat-square)
+![Available](https://img.shields.io/badge/Available-38-22c55e?style=flat-square) ![Saturated](https://img.shields.io/badge/Saturated-3-f59e0b?style=flat-square) ![Error](https://img.shields.io/badge/Error-0-ef4444?style=flat-square) ![Timeout](https://img.shields.io/badge/Timeout-1-a855f7?style=flat-square) ![Total](https://img.shields.io/badge/Total%20tested-42-4f8cff?style=flat-square)
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/history-dark.svg" />
@@ -27,7 +27,7 @@ automatically) and on an interactive dashboard via GitHub Pages.
 | 🟠 Saturated | `centralus` | capacity exhausted (AKSCapacityHeavyUsage) |
 | 🟠 Saturated | `eastus` | capacity exhausted (AKSCapacityHeavyUsage) |
 | 🟠 Saturated | `germanywestcentral` | capacity exhausted (AKSCapacityHeavyUsage) |
-| 🟠 Saturated | `westeurope` | capacity exhausted (AKSCapacityHeavyUsage) |
+| 🟣 Timeout | `westeurope` | exceeded 900s |
 
 <details>
 <summary>🟢 38 available regions</summary>

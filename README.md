@@ -11,9 +11,9 @@ automatically) and on an interactive dashboard via GitHub Pages.
 <!-- DASHBOARD:START -->
 ## 🌍 Azure Container Apps availability
 
-> Capacity to create a Container App Environment per region · automatically updated on **2026-08-12 20:32 UTC**.
+> Capacity to create a Container App Environment per region · automatically updated on **2026-08-12 21:31 UTC**.
 
-![Available](https://img.shields.io/badge/Available-39-22c55e?style=flat-square) ![Saturated](https://img.shields.io/badge/Saturated-3-f59e0b?style=flat-square) ![Error](https://img.shields.io/badge/Error-0-ef4444?style=flat-square) ![Timeout](https://img.shields.io/badge/Timeout-0-a855f7?style=flat-square) ![Total](https://img.shields.io/badge/Total%20tested-42-4f8cff?style=flat-square)
+![Available](https://img.shields.io/badge/Available-39-22c55e?style=flat-square) ![Saturated](https://img.shields.io/badge/Saturated-2-f59e0b?style=flat-square) ![Error](https://img.shields.io/badge/Error-1-ef4444?style=flat-square) ![Timeout](https://img.shields.io/badge/Timeout-0-a855f7?style=flat-square) ![Total](https://img.shields.io/badge/Total%20tested-42-4f8cff?style=flat-square)
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/history-dark.svg" />
@@ -24,9 +24,9 @@ automatically) and on an interactive dashboard via GitHub Pages.
 
 | Status | Region | Detail |
 | :--- | :--- | :--- |
-| 🟠 Saturated | `eastus2` | capacity exhausted (AKSCapacityHeavyUsage) |
 | 🟠 Saturated | `germanywestcentral` | capacity exhausted (AKSCapacityHeavyUsage) |
 | 🟠 Saturated | `westeurope` | capacity exhausted (AKSCapacityHeavyUsage) |
+| 🔴 Error | `eastus2` | / Running .. \| Running .. \ Running .. - Running .. / Running .. \| Running .. \ Running .. - Running ..ERROR: The command failed with an unexpected error. Here is the traceback: ERROR: Expecting prop |
 
 <details>
 <summary>🟢 39 available regions</summary>

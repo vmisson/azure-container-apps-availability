@@ -11,9 +11,9 @@ automatically) and on an interactive dashboard via GitHub Pages.
 <!-- DASHBOARD:START -->
 ## 🌍 Azure Container Apps availability
 
-> Capacity to create a Container App Environment per region · automatically updated on **2026-08-17 22:54 UTC**.
+> Capacity to create a Container App Environment per region · automatically updated on **2026-08-17 23:43 UTC**.
 
-![Available](https://img.shields.io/badge/Available-21-22c55e?style=flat-square) ![Saturated](https://img.shields.io/badge/Saturated-0-f59e0b?style=flat-square) ![Error](https://img.shields.io/badge/Error-20-ef4444?style=flat-square) ![Timeout](https://img.shields.io/badge/Timeout-1-a855f7?style=flat-square) ![Total](https://img.shields.io/badge/Total%20tested-42-4f8cff?style=flat-square)
+![Available](https://img.shields.io/badge/Available-41-22c55e?style=flat-square) ![Saturated](https://img.shields.io/badge/Saturated-0-f59e0b?style=flat-square) ![Error](https://img.shields.io/badge/Error-0-ef4444?style=flat-square) ![Timeout](https://img.shields.io/badge/Timeout-1-a855f7?style=flat-square) ![Total](https://img.shields.io/badge/Total%20tested-42-4f8cff?style=flat-square)
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/history-dark.svg" />
@@ -24,32 +24,12 @@ automatically) and on an interactive dashboard via GitHub Pages.
 
 | Status | Region | Detail |
 | :--- | :--- | :--- |
-| 🔴 Error | `australiaeast` | / Running .. \| Running .. \ Running .. - Running .. / Running .. \| Running .. \ Running .. - Running .. / Running .. \| Running .. \ Running .. - Running .. / Running ..ERROR: The command failed with |
-| 🔴 Error | `brazilsouth` | / Running ..ERROR: The command failed with an unexpected error. Here is the traceback: ERROR: HTTPSConnectionPool(host='management.azure.com', port=443): Max retries exceeded with url: /subscriptions |
-| 🔴 Error | `canadacentral` | / Running .. \| Running .. \ Running .. - Running .. / Running .. \| Running .. \ Running .. - Running .. / Running .. \| Running .. \ Running .. - Running ..ERROR: The command failed with an unexpected |
-| 🔴 Error | `canadaeast` | / Running .. \| Running .. \ Running .. - Running .. / Running .. \| Running .. \ Running .. - Running ..ERROR: The command failed with an unexpected error. Here is the traceback: ERROR: HTTPSConnectio |
-| 🔴 Error | `centralindia` | ERROR: The command failed with an unexpected error. Here is the traceback: ERROR: HTTPSConnectionPool(host='management.azure.com', port=443): Max retries exceeded with url: /subscriptions/35f24acd-e75 |
-| 🔴 Error | `centralus` | / Running .. \| Running .. \ Running .. - Running .. / Running .. \| Running .. \ Running .. - Running .. / Running .. \| Running ..ERROR: The command failed with an unexpected error. Here is the traceb |
-| 🔴 Error | `eastasia` | / Running .. \| Running ..ERROR: The command failed with an unexpected error. Here is the traceback: ERROR: HTTPSConnectionPool(host='management.azure.com', port=443): Max retries exceeded with url: / |
-| 🔴 Error | `eastus2` | / Running ..ERROR: The command failed with an unexpected error. Here is the traceback: ERROR: HTTPSConnectionPool(host='management.azure.com', port=443): Max retries exceeded with url: /subscriptions |
-| 🔴 Error | `francecentral` | ERROR: The command failed with an unexpected error. Here is the traceback: ERROR: HTTPSConnectionPool(host='management.azure.com', port=443): Max retries exceeded with url: /subscriptions/35f24acd-e75 |
-| 🔴 Error | `germanywestcentral` | / Running .. \| Running .. \ Running .. - Running .. / Running .. \| Running ..ERROR: The command failed with an unexpected error. Here is the traceback: ERROR: HTTPSConnectionPool(host='management.azu |
-| 🔴 Error | `italynorth` | ERROR: The command failed with an unexpected error. Here is the traceback: ERROR: HTTPSConnectionPool(host='management.azure.com', port=443): Max retries exceeded with url: /subscriptions/35f24acd-e75 |
-| 🔴 Error | `japaneast` | / Running .. \| Running .. \ Running .. - Running .. / Running .. \| Running .. \ Running .. - Running .. / Running .. \| Running .. \ Running ..ERROR: The command failed with an unexpected error. Here |
-| 🔴 Error | `koreacentral` | / Running .. \| Running .. \ Running .. - Running .. / Running .. \| Running .. \ Running .. - Running .. / Running ..ERROR: The command failed with an unexpected error. Here is the traceback: ERROR: H |
-| 🔴 Error | `malaysiawest` | ERROR: The command failed with an unexpected error. Here is the traceback: ERROR: HTTPSConnectionPool(host='management.azure.com', port=443): Max retries exceeded with url: /subscriptions/35f24acd-e75 |
-| 🔴 Error | `newzealandnorth` | / Running .. \| Running .. \ Running .. - Running .. / Running .. \| Running .. \ Running .. - Running .. / Running .. \| Running .. \ Running .. - Running .. / Running .. \| Running .. \ Running ..ERROR |
-| 🔴 Error | `northcentralus` | ERROR: The command failed with an unexpected error. Here is the traceback: ERROR: HTTPSConnectionPool(host='management.azure.com', port=443): Max retries exceeded with url: /subscriptions/35f24acd-e75 |
-| 🔴 Error | `polandcentral` | / Running .. \| Running .. \ Running .. - Running .. / Running .. \| Running .. \ Running .. - Running .. / Running .. \| Running .. \ Running .. - Running .. / Running ..ERROR: The command failed with |
-| 🔴 Error | `uaenorth` | / Running .. \| Running .. \ Running .. - Running .. / Running .. \| Running .. \ Running .. - Running .. / Running .. \| Running .. \ Running .. - Running .. / Running .. \| Running .. \ Running .. - Ru |
-| 🔴 Error | `westcentralus` | / Running .. \| Running .. \ Running .. - Running .. / Running ..ERROR: The command failed with an unexpected error. Here is the traceback: ERROR: HTTPSConnectionPool(host='management.azure.com', port |
-| 🔴 Error | `westus3` | / Running .. \| Running .. \ Running .. - Running .. / Running .. \| Running .. \ Running .. [KERROR: The command failed with an unexpected error. Here is the traceback: ERROR: HTTPSConnectionPool(hos |
 | 🟣 Timeout | `westeurope` | exceeded 900s |
 
 <details>
-<summary>🟢 21 available regions</summary>
+<summary>🟢 41 available regions</summary>
 
-`australiasoutheast`, `belgiumcentral`, `chilecentral`, `eastus`, `indonesiacentral`, `japanwest`, `jioindiawest`, `koreasouth`, `northeurope`, `norwayeast`, `southafricanorth`, `southcentralus`, `southeastasia`, `southindia`, `spaincentral`, `swedencentral`, `switzerlandnorth`, `uksouth`, `ukwest`, `westus`, `westus2`
+`australiaeast`, `australiasoutheast`, `belgiumcentral`, `brazilsouth`, `canadacentral`, `canadaeast`, `centralindia`, `centralus`, `chilecentral`, `eastasia`, `eastus`, `eastus2`, `francecentral`, `germanywestcentral`, `indonesiacentral`, `italynorth`, `japaneast`, `japanwest`, `jioindiawest`, `koreacentral`, `koreasouth`, `malaysiawest`, `newzealandnorth`, `northcentralus`, `northeurope`, `norwayeast`, `polandcentral`, `southafricanorth`, `southcentralus`, `southeastasia`, `southindia`, `spaincentral`, `swedencentral`, `switzerlandnorth`, `uaenorth`, `uksouth`, `ukwest`, `westcentralus`, `westus`, `westus2`, `westus3`
 
 </details>
 

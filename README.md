@@ -11,9 +11,9 @@ automatically) and on an interactive dashboard via GitHub Pages.
 <!-- DASHBOARD:START -->
 ## 🌍 Azure Container Apps availability
 
-> Capacity to create a Container App Environment per region · automatically updated on **2026-09-03 03:42 UTC**.
+> Capacity to create a Container App Environment per region · automatically updated on **2026-09-03 04:42 UTC**.
 
-![Available](https://img.shields.io/badge/Available-42-22c55e?style=flat-square) ![Saturated](https://img.shields.io/badge/Saturated-0-f59e0b?style=flat-square) ![Error](https://img.shields.io/badge/Error-2-ef4444?style=flat-square) ![Timeout](https://img.shields.io/badge/Timeout-0-a855f7?style=flat-square) ![Total](https://img.shields.io/badge/Total%20tested-44-4f8cff?style=flat-square)
+![Available](https://img.shields.io/badge/Available-42-22c55e?style=flat-square) ![Saturated](https://img.shields.io/badge/Saturated-0-f59e0b?style=flat-square) ![Error](https://img.shields.io/badge/Error-0-ef4444?style=flat-square) ![Timeout](https://img.shields.io/badge/Timeout-0-a855f7?style=flat-square) ![Total](https://img.shields.io/badge/Total%20tested-42-4f8cff?style=flat-square)
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/history-dark.svg" />
@@ -22,10 +22,7 @@ automatically) and on an interactive dashboard via GitHub Pages.
 
 ### Regions to watch
 
-| Status | Region | Detail |
-| :--- | :--- | :--- |
-| 🔴 Error | `austriaeast` | ERROR: (LocationNotAvailableForResourceType) The provided location 'austriaeast' is not available for resource type 'Microsoft.App/managedEnvironments'. List of available regions for the resource type |
-| 🔴 Error | `mexicocentral` | ERROR: (LocationNotAvailableForResourceType) The provided location 'mexicocentral' is not available for resource type 'Microsoft.App/managedEnvironments'. List of available regions for the resource ty |
+> ✅ **All tested regions are available.**
 
 <details>
 <summary>🟢 42 available regions</summary>

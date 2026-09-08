@@ -11,9 +11,9 @@ automatically) and on an interactive dashboard via GitHub Pages.
 <!-- DASHBOARD:START -->
 ## 🌍 Azure Container Apps availability
 
-> Capacity to create a Container App Environment per region · automatically updated on **2026-09-08 16:44 UTC**.
+> Capacity to create a Container App Environment per region · automatically updated on **2026-09-08 17:38 UTC**.
 
-![Available](https://img.shields.io/badge/Available-44-22c55e?style=flat-square) ![Saturated](https://img.shields.io/badge/Saturated-0-f59e0b?style=flat-square) ![Error](https://img.shields.io/badge/Error-0-ef4444?style=flat-square) ![Timeout](https://img.shields.io/badge/Timeout-0-a855f7?style=flat-square) ![Total](https://img.shields.io/badge/Total%20tested-44-4f8cff?style=flat-square)
+![Available](https://img.shields.io/badge/Available-29-22c55e?style=flat-square) ![Saturated](https://img.shields.io/badge/Saturated-0-f59e0b?style=flat-square) ![Error](https://img.shields.io/badge/Error-15-ef4444?style=flat-square) ![Timeout](https://img.shields.io/badge/Timeout-0-a855f7?style=flat-square) ![Total](https://img.shields.io/badge/Total%20tested-44-4f8cff?style=flat-square)
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/history-dark.svg" />
@@ -22,12 +22,28 @@ automatically) and on an interactive dashboard via GitHub Pages.
 
 ### Regions to watch
 
-> ✅ **All tested regions are available.**
+| Status | Region | Detail |
+| :--- | :--- | :--- |
+| 🔴 Error | `australiaeast` | / Running .. \| Running .. \ Running .. - Running .. / Running .. \| Running .. \ Running .. - Running .. / Running .. \| Running .. \ Running .. - Running .. / Running .. \| Running .. \ Running .. - Ru |
+| 🔴 Error | `australiasoutheast` | ERROR: Too Many Requests(Ref A: C6630D9247D64D3B9186CB6814AEA83E Ref B: BL2AA2010205035 Ref C: 2026-09-08T17:20:39Z) |
+| 🔴 Error | `austriaeast` | / Running .. \| Running .. \ Running .. - Running .. / Running .. \| Running .. \ Running .. - Running .. / Running .. \| Running .. \ Running .. - Running .. / Running .. \| Running .. \ Running .. - Ru |
+| 🔴 Error | `canadaeast` | / Running .. \| Running .. \ Running .. - Running .. / Running .. \| Running ..ERROR: Too Many Requests(Ref A: B98B5D1CDA7340CD8A44991BC6F2AC42 Ref B: BL2AA2010204023 Ref C: 2026-09-08T17:20:51Z) |
+| 🔴 Error | `eastasia` | ERROR: Too Many Requests(Ref A: E97CF8DBE29243F1B7C39F90C71A88E4 Ref B: BL2AA2030101027 Ref C: 2026-09-08T17:20:45Z) |
+| 🔴 Error | `eastus` | / Running .. \| Running .. \ Running .. - Running ..ERROR: Too Many Requests(Ref A: 26E4250A64934FA68AD4973BC49A31E1 Ref B: BL2AA2010205021 Ref C: 2026-09-08T17:21:01Z) |
+| 🔴 Error | `jioindiawest` | / Running .. \| Running .. \ Running .. - Running .. / Running .. \| Running .. \ Running .. - Running .. / Running .. \| Running .. \ Running .. - Running .. / Running .. \| Running .. \ Running .. - Ru |
+| 🔴 Error | `koreasouth` | / Running ..ERROR: Too Many Requests(Ref A: D8B18D5DA25541D59EB7520D93AFABBF Ref B: BL2AA2030101031 Ref C: 2026-09-08T17:23:31Z) |
+| 🔴 Error | `mexicocentral` | / Running .. \| Running .. \ Running .. - Running .. / Running .. \| Running .. \ Running .. - Running .. / Running .. \| Running .. \ Running .. - Running .. / Running .. \| Running .. \ Running .. - Ru |
+| 🔴 Error | `polandcentral` | / Running .. \| Running ..ERROR: Too Many Requests(Ref A: E26E4993C0F4413E8CF6A0F7FA03E6A3 Ref B: BL2AA2010204017 Ref C: 2026-09-08T17:24:45Z) |
+| 🔴 Error | `southafricanorth` | / Running .. \| Running .. \ Running .. - Running .. / Running .. \| Running .. \ Running .. - Running .. / Running .. \| Running .. \ Running .. - Running .. / Running .. \| Running .. \ Running ..ERROR |
+| 🔴 Error | `southcentralus` | / Running .. \| Running .. \ Running .. - Running .. / Running .. \| Running .. \ Running .. - Running .. / Running .. \| Running .. \ Running .. - Running .. / Running .. \| Running .. \ Running .. - Ru |
+| 🔴 Error | `southeastasia` | / Running .. \| Running .. \ Running .. - Running .. / Running .. \| Running .. \ Running .. - Running .. / Running .. \| Running .. \ Running .. - Running ..ERROR: Too Many Requests(Ref A: A99E1629FB48 |
+| 🔴 Error | `swedencentral` | / Running .. \| Running .. \ Running .. - Running .. / Running .. \| Running .. \ Running .. - Running .. / Running .. \| Running .. \ Running ..ERROR: Too Many Requests(Ref A: 4F34EEA5677841C38F45AA368 |
+| 🔴 Error | `westcentralus` | / Running .. \| Running .. \ Running .. - Running .. / Running .. \| Running .. \ Running .. - Running .. / Running .. \| Running .. \ Running .. - Running .. / Running .. \| Running .. \ Running .. - Ru |
 
 <details>
-<summary>🟢 44 available regions</summary>
+<summary>🟢 29 available regions</summary>
 
-`australiaeast`, `australiasoutheast`, `austriaeast`, `belgiumcentral`, `brazilsouth`, `canadacentral`, `canadaeast`, `centralindia`, `centralus`, `chilecentral`, `eastasia`, `eastus`, `eastus2`, `francecentral`, `germanywestcentral`, `indonesiacentral`, `italynorth`, `japaneast`, `japanwest`, `jioindiawest`, `koreacentral`, `koreasouth`, `malaysiawest`, `mexicocentral`, `newzealandnorth`, `northcentralus`, `northeurope`, `norwayeast`, `polandcentral`, `southafricanorth`, `southcentralus`, `southeastasia`, `southindia`, `spaincentral`, `swedencentral`, `switzerlandnorth`, `uaenorth`, `uksouth`, `ukwest`, `westcentralus`, `westeurope`, `westus`, `westus2`, `westus3`
+`belgiumcentral`, `brazilsouth`, `canadacentral`, `centralindia`, `centralus`, `chilecentral`, `eastus2`, `francecentral`, `germanywestcentral`, `indonesiacentral`, `italynorth`, `japaneast`, `japanwest`, `koreacentral`, `malaysiawest`, `newzealandnorth`, `northcentralus`, `northeurope`, `norwayeast`, `southindia`, `spaincentral`, `switzerlandnorth`, `uaenorth`, `uksouth`, `ukwest`, `westeurope`, `westus`, `westus2`, `westus3`
 
 </details>
 

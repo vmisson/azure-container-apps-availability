@@ -11,9 +11,9 @@ automatically) and on an interactive dashboard via GitHub Pages.
 <!-- DASHBOARD:START -->
 ## 🌍 Azure Container Apps availability
 
-> Capacity to create a Container App Environment per region · automatically updated on **2026-09-21 20:47 UTC**.
+> Capacity to create a Container App Environment per region · automatically updated on **2026-09-21 21:45 UTC**.
 
-![Available](https://img.shields.io/badge/Available-40-22c55e?style=flat-square) ![Saturated](https://img.shields.io/badge/Saturated-2-f59e0b?style=flat-square) ![Error](https://img.shields.io/badge/Error-1-ef4444?style=flat-square) ![Timeout](https://img.shields.io/badge/Timeout-1-a855f7?style=flat-square) ![Total](https://img.shields.io/badge/Total%20tested-44-4f8cff?style=flat-square)
+![Available](https://img.shields.io/badge/Available-38-22c55e?style=flat-square) ![Saturated](https://img.shields.io/badge/Saturated-2-f59e0b?style=flat-square) ![Error](https://img.shields.io/badge/Error-2-ef4444?style=flat-square) ![Timeout](https://img.shields.io/badge/Timeout-2-a855f7?style=flat-square) ![Total](https://img.shields.io/badge/Total%20tested-44-4f8cff?style=flat-square)
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/history-dark.svg" />
@@ -26,13 +26,15 @@ automatically) and on an interactive dashboard via GitHub Pages.
 | :--- | :--- | :--- |
 | 🟠 Saturated | `centralus` | capacity exhausted (AKSCapacityHeavyUsage) |
 | 🟠 Saturated | `eastus` | capacity exhausted (AKSCapacityHeavyUsage) |
-| 🔴 Error | `australiasoutheast` | / Running .. \| Running .. \ Running .. - Running .. / Running .. \| Running .. \ Running .. - Running .. / Running .. \| Running .. \ Running .. - Running .. / Running .. \| Running .. \ Running .. - Ru |
+| 🔴 Error | `northeurope` | / Running .. \| Running .. \ Running .. - Running .. / Running .. \| Running .. \ Running .. - Running .. / Running .. \| Running .. \ Running .. - Running .. / Running .. \| Running .. \ Running .. - Ru |
+| 🔴 Error | `southeastasia` | / Running .. \| Running .. \ Running .. - Running .. / Running ..ERROR: The command failed with an unexpected error. Here is the traceback: ERROR: ('Connection aborted.', ConnectionResetError(104, 'Co |
+| 🟣 Timeout | `australiaeast` | exceeded 900s |
 | 🟣 Timeout | `westeurope` | exceeded 900s |
 
 <details>
-<summary>🟢 40 available regions</summary>
+<summary>🟢 38 available regions</summary>
 
-`australiaeast`, `austriaeast`, `belgiumcentral`, `brazilsouth`, `canadacentral`, `canadaeast`, `centralindia`, `chilecentral`, `eastasia`, `eastus2`, `francecentral`, `germanywestcentral`, `indonesiacentral`, `italynorth`, `japaneast`, `japanwest`, `jioindiawest`, `koreacentral`, `koreasouth`, `malaysiawest`, `mexicocentral`, `newzealandnorth`, `northcentralus`, `northeurope`, `norwayeast`, `polandcentral`, `southafricanorth`, `southcentralus`, `southeastasia`, `southindia`, `spaincentral`, `swedencentral`, `switzerlandnorth`, `uaenorth`, `uksouth`, `ukwest`, `westcentralus`, `westus`, `westus2`, `westus3`
+`australiasoutheast`, `austriaeast`, `belgiumcentral`, `brazilsouth`, `canadacentral`, `canadaeast`, `centralindia`, `chilecentral`, `eastasia`, `eastus2`, `francecentral`, `germanywestcentral`, `indonesiacentral`, `italynorth`, `japaneast`, `japanwest`, `jioindiawest`, `koreacentral`, `koreasouth`, `malaysiawest`, `mexicocentral`, `newzealandnorth`, `northcentralus`, `norwayeast`, `polandcentral`, `southafricanorth`, `southcentralus`, `southindia`, `spaincentral`, `swedencentral`, `switzerlandnorth`, `uaenorth`, `uksouth`, `ukwest`, `westcentralus`, `westus`, `westus2`, `westus3`
 
 </details>
 

@@ -11,9 +11,9 @@ automatically) and on an interactive dashboard via GitHub Pages.
 <!-- DASHBOARD:START -->
 ## 🌍 Azure Container Apps availability
 
-> Capacity to create a Container App Environment per region · automatically updated on **2026-09-22 08:39 UTC**.
+> Capacity to create a Container App Environment per region · automatically updated on **2026-09-22 09:48 UTC**.
 
-![Available](https://img.shields.io/badge/Available-40-22c55e?style=flat-square) ![Saturated](https://img.shields.io/badge/Saturated-2-f59e0b?style=flat-square) ![Error](https://img.shields.io/badge/Error-2-ef4444?style=flat-square) ![Timeout](https://img.shields.io/badge/Timeout-0-a855f7?style=flat-square) ![Total](https://img.shields.io/badge/Total%20tested-44-4f8cff?style=flat-square)
+![Available](https://img.shields.io/badge/Available-40-22c55e?style=flat-square) ![Saturated](https://img.shields.io/badge/Saturated-2-f59e0b?style=flat-square) ![Error](https://img.shields.io/badge/Error-1-ef4444?style=flat-square) ![Timeout](https://img.shields.io/badge/Timeout-1-a855f7?style=flat-square) ![Total](https://img.shields.io/badge/Total%20tested-44-4f8cff?style=flat-square)
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/history-dark.svg" />
@@ -26,8 +26,8 @@ automatically) and on an interactive dashboard via GitHub Pages.
 | :--- | :--- | :--- |
 | 🟠 Saturated | `centralus` | capacity exhausted (AKSCapacityHeavyUsage) |
 | 🟠 Saturated | `eastus` | capacity exhausted (AKSCapacityHeavyUsage) |
-| 🔴 Error | `swedencentral` | / Running .. \| Running .. \ Running .. - Running .. / Running .. \| Running .. \ Running .. - Running .. / Running .. \| Running .. \ Running .. - Running .. / Running .. \| Running .. \ Running .. - Ru |
-| 🔴 Error | `westeurope` | ERROR: (ManagedEnvironmentNoAvailableCapacityInRegion) No capacity available in this region for provisioning an environment, please try again in another region. |
+| 🔴 Error | `swedencentral` | / Running .. \| Running .. \ Running .. - Running .. / Running .. \| Running .. \ Running ..ERROR: Managed Cluster 'wittyhill-083db51a' provision failed, error code is : ManagedEnvironmentNoAvailableCa |
+| 🟣 Timeout | `westeurope` | exceeded 900s |
 
 <details>
 <summary>🟢 40 available regions</summary>

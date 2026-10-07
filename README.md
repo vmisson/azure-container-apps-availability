@@ -11,9 +11,9 @@ automatically) and on an interactive dashboard via GitHub Pages.
 <!-- DASHBOARD:START -->
 ## 🌍 Azure Container Apps availability
 
-> Capacity to create a Container App Environment per region · automatically updated on **2026-10-07 18:47 UTC**.
+> Capacity to create a Container App Environment per region · automatically updated on **2026-10-07 19:47 UTC**.
 
-![Available](https://img.shields.io/badge/Available-35-22c55e?style=flat-square) ![Saturated](https://img.shields.io/badge/Saturated-6-f59e0b?style=flat-square) ![Error](https://img.shields.io/badge/Error-0-ef4444?style=flat-square) ![Timeout](https://img.shields.io/badge/Timeout-3-a855f7?style=flat-square) ![Total](https://img.shields.io/badge/Total%20tested-44-4f8cff?style=flat-square)
+![Available](https://img.shields.io/badge/Available-34-22c55e?style=flat-square) ![Saturated](https://img.shields.io/badge/Saturated-6-f59e0b?style=flat-square) ![Error](https://img.shields.io/badge/Error-2-ef4444?style=flat-square) ![Timeout](https://img.shields.io/badge/Timeout-2-a855f7?style=flat-square) ![Total](https://img.shields.io/badge/Total%20tested-44-4f8cff?style=flat-square)
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/history-dark.svg" />
@@ -30,14 +30,15 @@ automatically) and on an interactive dashboard via GitHub Pages.
 | 🟠 Saturated | `northcentralus` | capacity exhausted (AKSCapacityHeavyUsage) |
 | 🟠 Saturated | `southcentralus` | capacity exhausted (AKSCapacityHeavyUsage) |
 | 🟠 Saturated | `swedencentral` | capacity exhausted (AKSCapacityHeavyUsage) |
-| 🟣 Timeout | `australiaeast` | exceeded 900s |
+| 🔴 Error | `austriaeast` | / Running .. \| Running .. \ Running .. - Running .. / Running .. \| Running .. \ Running .. - Running .. / Running .. \| Running .. \ Running .. - Running .. / Running .. \| Running .. \ Running .. - Ru |
+| 🔴 Error | `canadacentral` | / Running .. \| Running .. \ Running .. - Running .. / Running .. \| Running ..ERROR: The command failed with an unexpected error. Here is the traceback: ERROR: Expecting property name enclosed in doub |
 | 🟣 Timeout | `eastus2` | exceeded 900s |
 | 🟣 Timeout | `westeurope` | exceeded 900s |
 
 <details>
-<summary>🟢 35 available regions</summary>
+<summary>🟢 34 available regions</summary>
 
-`australiasoutheast`, `austriaeast`, `belgiumcentral`, `brazilsouth`, `canadacentral`, `canadaeast`, `centralindia`, `chilecentral`, `eastasia`, `francecentral`, `indonesiacentral`, `italynorth`, `japaneast`, `japanwest`, `jioindiawest`, `koreacentral`, `koreasouth`, `malaysiawest`, `mexicocentral`, `newzealandnorth`, `northeurope`, `norwayeast`, `polandcentral`, `southafricanorth`, `southeastasia`, `southindia`, `spaincentral`, `switzerlandnorth`, `uaenorth`, `uksouth`, `ukwest`, `westcentralus`, `westus`, `westus2`, `westus3`
+`australiaeast`, `australiasoutheast`, `belgiumcentral`, `brazilsouth`, `canadaeast`, `centralindia`, `chilecentral`, `eastasia`, `francecentral`, `indonesiacentral`, `italynorth`, `japaneast`, `japanwest`, `jioindiawest`, `koreacentral`, `koreasouth`, `malaysiawest`, `mexicocentral`, `newzealandnorth`, `northeurope`, `norwayeast`, `polandcentral`, `southafricanorth`, `southeastasia`, `southindia`, `spaincentral`, `switzerlandnorth`, `uaenorth`, `uksouth`, `ukwest`, `westcentralus`, `westus`, `westus2`, `westus3`
 
 </details>
 

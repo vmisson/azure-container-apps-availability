@@ -11,9 +11,9 @@ automatically) and on an interactive dashboard via GitHub Pages.
 <!-- DASHBOARD:START -->
 ## 🌍 Azure Container Apps availability
 
-> Capacity to create a Container App Environment per region · automatically updated on **2026-10-07 14:39 UTC**.
+> Capacity to create a Container App Environment per region · automatically updated on **2026-10-07 15:47 UTC**.
 
-![Available](https://img.shields.io/badge/Available-33-22c55e?style=flat-square) ![Saturated](https://img.shields.io/badge/Saturated-6-f59e0b?style=flat-square) ![Error](https://img.shields.io/badge/Error-5-ef4444?style=flat-square) ![Timeout](https://img.shields.io/badge/Timeout-0-a855f7?style=flat-square) ![Total](https://img.shields.io/badge/Total%20tested-44-4f8cff?style=flat-square)
+![Available](https://img.shields.io/badge/Available-36-22c55e?style=flat-square) ![Saturated](https://img.shields.io/badge/Saturated-6-f59e0b?style=flat-square) ![Error](https://img.shields.io/badge/Error-0-ef4444?style=flat-square) ![Timeout](https://img.shields.io/badge/Timeout-2-a855f7?style=flat-square) ![Total](https://img.shields.io/badge/Total%20tested-44-4f8cff?style=flat-square)
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/history-dark.svg" />
@@ -30,16 +30,13 @@ automatically) and on an interactive dashboard via GitHub Pages.
 | 🟠 Saturated | `northcentralus` | capacity exhausted (AKSCapacityHeavyUsage) |
 | 🟠 Saturated | `southcentralus` | capacity exhausted (AKSCapacityHeavyUsage) |
 | 🟠 Saturated | `swedencentral` | capacity exhausted (AKSCapacityHeavyUsage) |
-| 🔴 Error | `australiaeast` | / Running .. \| Running .. \ Running .. - Running .. / Running .. \| Running .. \ Running .. - Running .. / Running .. \| Running .. \ Running .. - Running .. / Running .. \| Running .. \ Running .. - Ru |
-| 🔴 Error | `austriaeast` | / Running .. \| Running .. \ Running .. - Running .. / Running .. \| Running .. \ Running .. - Running .. / Running .. \| Running .. \ Running .. - Running .. / Running .. \| Running .. \ Running .. - Ru |
-| 🔴 Error | `malaysiawest` | / Running .. \| Running .. \ Running .. - Running .. / Running .. \| Running .. \ Running .. - Running .. / Running .. \| Running .. \ Running .. - Running ..ERROR: Too Many Requests(Ref A: 43813DDDD4BA |
-| 🔴 Error | `uaenorth` | / Running .. \| Running .. \ Running .. - Running .. / Running .. \| Running .. \ Running .. - Running .. / Running .. \| Running .. \ Running .. - Running .. / Running .. \| Running .. \ Running ..ERROR |
-| 🔴 Error | `westeurope` | / Running .. \| Running .. \ Running .. - Running .. / Running .. \| Running .. \ Running .. - Running .. / Running .. \| Running .. \ Running .. - Running .. / Running .. \| Running .. \ Running .. - Ru |
+| 🟣 Timeout | `australiaeast` | exceeded 900s |
+| 🟣 Timeout | `eastus2` | exceeded 900s |
 
 <details>
-<summary>🟢 33 available regions</summary>
+<summary>🟢 36 available regions</summary>
 
-`australiasoutheast`, `belgiumcentral`, `brazilsouth`, `canadacentral`, `canadaeast`, `centralindia`, `chilecentral`, `eastasia`, `eastus2`, `francecentral`, `indonesiacentral`, `italynorth`, `japaneast`, `japanwest`, `jioindiawest`, `koreacentral`, `koreasouth`, `mexicocentral`, `newzealandnorth`, `northeurope`, `norwayeast`, `polandcentral`, `southafricanorth`, `southeastasia`, `southindia`, `spaincentral`, `switzerlandnorth`, `uksouth`, `ukwest`, `westcentralus`, `westus`, `westus2`, `westus3`
+`australiasoutheast`, `austriaeast`, `belgiumcentral`, `brazilsouth`, `canadacentral`, `canadaeast`, `centralindia`, `chilecentral`, `eastasia`, `francecentral`, `indonesiacentral`, `italynorth`, `japaneast`, `japanwest`, `jioindiawest`, `koreacentral`, `koreasouth`, `malaysiawest`, `mexicocentral`, `newzealandnorth`, `northeurope`, `norwayeast`, `polandcentral`, `southafricanorth`, `southeastasia`, `southindia`, `spaincentral`, `switzerlandnorth`, `uaenorth`, `uksouth`, `ukwest`, `westcentralus`, `westeurope`, `westus`, `westus2`, `westus3`
 
 </details>
 

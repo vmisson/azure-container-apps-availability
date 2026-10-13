@@ -11,9 +11,9 @@ automatically) and on an interactive dashboard via GitHub Pages.
 <!-- DASHBOARD:START -->
 ## 🌍 Azure Container Apps availability
 
-> Capacity to create a Container App Environment per region · automatically updated on **2026-10-13 13:45 UTC**.
+> Capacity to create a Container App Environment per region · automatically updated on **2026-10-13 14:48 UTC**.
 
-![Available](https://img.shields.io/badge/Available-34-22c55e?style=flat-square) ![Saturated](https://img.shields.io/badge/Saturated-4-f59e0b?style=flat-square) ![Error](https://img.shields.io/badge/Error-4-ef4444?style=flat-square) ![Timeout](https://img.shields.io/badge/Timeout-2-a855f7?style=flat-square) ![Total](https://img.shields.io/badge/Total%20tested-44-4f8cff?style=flat-square)
+![Available](https://img.shields.io/badge/Available-37-22c55e?style=flat-square) ![Saturated](https://img.shields.io/badge/Saturated-4-f59e0b?style=flat-square) ![Error](https://img.shields.io/badge/Error-0-ef4444?style=flat-square) ![Timeout](https://img.shields.io/badge/Timeout-3-a855f7?style=flat-square) ![Total](https://img.shields.io/badge/Total%20tested-44-4f8cff?style=flat-square)
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/history-dark.svg" />
@@ -28,17 +28,14 @@ automatically) and on an interactive dashboard via GitHub Pages.
 | 🟠 Saturated | `eastus` | capacity exhausted (AKSCapacityHeavyUsage) |
 | 🟠 Saturated | `germanywestcentral` | capacity exhausted (AKSCapacityHeavyUsage) |
 | 🟠 Saturated | `southcentralus` | capacity exhausted (AKSCapacityHeavyUsage) |
-| 🔴 Error | `australiaeast` | / Running .. \| Running .. \ Running .. - Running .. / Running .. \| Running .. \ Running .. - Running .. / Running .. \| Running .. \ Running .. - Running .. / Running .. \| Running .. \ Running .. - Ru |
-| 🔴 Error | `austriaeast` | / Running .. \| Running .. \ Running .. - Running .. / Running .. \| Running .. \ Running .. - Running .. / Running .. \| Running .. \ Running .. - Running ..ERROR: The command failed with an unexpected |
-| 🔴 Error | `francecentral` | / Running .. \| Running .. \ Running .. - Running .. / Running .. \| Running .. \ Running .. - Running .. / Running .. \| Running .. \ Running .. - Running .. / Running .. \| Running .. \ Running .. - Ru |
-| 🔴 Error | `southafricanorth` | / Running ..ERROR: (ServerTimeout) The request timed out. Diagnostic information: timestamp '20261013T132856Z', subscription id '35f24acd-e758-4e82-acdd-c89c66bf929b', tracking id '16e11113-6cbc-46ac |
+| 🟣 Timeout | `australiaeast` | exceeded 900s |
 | 🟣 Timeout | `eastus2` | exceeded 900s |
 | 🟣 Timeout | `westeurope` | exceeded 900s |
 
 <details>
-<summary>🟢 34 available regions</summary>
+<summary>🟢 37 available regions</summary>
 
-`australiasoutheast`, `belgiumcentral`, `brazilsouth`, `canadacentral`, `canadaeast`, `centralindia`, `chilecentral`, `eastasia`, `indonesiacentral`, `italynorth`, `japaneast`, `japanwest`, `jioindiawest`, `koreacentral`, `koreasouth`, `malaysiawest`, `mexicocentral`, `newzealandnorth`, `northcentralus`, `northeurope`, `norwayeast`, `polandcentral`, `southeastasia`, `southindia`, `spaincentral`, `swedencentral`, `switzerlandnorth`, `uaenorth`, `uksouth`, `ukwest`, `westcentralus`, `westus`, `westus2`, `westus3`
+`australiasoutheast`, `austriaeast`, `belgiumcentral`, `brazilsouth`, `canadacentral`, `canadaeast`, `centralindia`, `chilecentral`, `eastasia`, `francecentral`, `indonesiacentral`, `italynorth`, `japaneast`, `japanwest`, `jioindiawest`, `koreacentral`, `koreasouth`, `malaysiawest`, `mexicocentral`, `newzealandnorth`, `northcentralus`, `northeurope`, `norwayeast`, `polandcentral`, `southafricanorth`, `southeastasia`, `southindia`, `spaincentral`, `swedencentral`, `switzerlandnorth`, `uaenorth`, `uksouth`, `ukwest`, `westcentralus`, `westus`, `westus2`, `westus3`
 
 </details>
 

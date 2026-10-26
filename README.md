@@ -11,9 +11,9 @@ automatically) and on an interactive dashboard via GitHub Pages.
 <!-- DASHBOARD:START -->
 ## 🌍 Azure Container Apps availability
 
-> Capacity to create a Container App Environment per region · automatically updated on **2026-10-26 14:47 UTC**.
+> Capacity to create a Container App Environment per region · automatically updated on **2026-10-26 15:49 UTC**.
 
-![Available](https://img.shields.io/badge/Available-38-22c55e?style=flat-square) ![Saturated](https://img.shields.io/badge/Saturated-1-f59e0b?style=flat-square) ![Error](https://img.shields.io/badge/Error-1-ef4444?style=flat-square) ![Timeout](https://img.shields.io/badge/Timeout-4-a855f7?style=flat-square) ![Total](https://img.shields.io/badge/Total%20tested-44-4f8cff?style=flat-square)
+![Available](https://img.shields.io/badge/Available-39-22c55e?style=flat-square) ![Saturated](https://img.shields.io/badge/Saturated-1-f59e0b?style=flat-square) ![Error](https://img.shields.io/badge/Error-2-ef4444?style=flat-square) ![Timeout](https://img.shields.io/badge/Timeout-2-a855f7?style=flat-square) ![Total](https://img.shields.io/badge/Total%20tested-44-4f8cff?style=flat-square)
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/history-dark.svg" />
@@ -25,16 +25,15 @@ automatically) and on an interactive dashboard via GitHub Pages.
 | Status | Region | Detail |
 | :--- | :--- | :--- |
 | 🟠 Saturated | `germanywestcentral` | capacity exhausted (AKSCapacityHeavyUsage) |
-| 🔴 Error | `eastus` | / Running ..ERROR: Too Many Requests(Ref A: 83DEE137CEED4FCC8DC4A34668B2F565 Ref B: BL2AA2010204005 Ref C: 2026-10-26T14:22:45Z) |
-| 🟣 Timeout | `australiaeast` | exceeded 900s |
+| 🔴 Error | `australiaeast` | / Running .. \| Running .. \ Running .. - Running .. / Running .. \| Running .. \ Running .. - Running .. / Running .. \| Running .. \ Running .. - Running .. / Running .. \| Running .. \ Running .. - Ru |
+| 🔴 Error | `westus` | ERROR: (PolicyEvaluationTimeout) Unable to evaluate policy for resource '/subscriptions/35f24acd-e758-4e82-acdd-c89c66bf929b/resourceGroups/caf5f3c7-westus/providers/Microsoft.App/managedEnvironments/ |
 | 🟣 Timeout | `eastus2` | exceeded 900s |
-| 🟣 Timeout | `mexicocentral` | exceeded 900s |
 | 🟣 Timeout | `westeurope` | exceeded 900s |
 
 <details>
-<summary>🟢 38 available regions</summary>
+<summary>🟢 39 available regions</summary>
 
-`australiasoutheast`, `austriaeast`, `belgiumcentral`, `brazilsouth`, `canadacentral`, `canadaeast`, `centralindia`, `centralus`, `chilecentral`, `eastasia`, `francecentral`, `indonesiacentral`, `italynorth`, `japaneast`, `japanwest`, `jioindiawest`, `koreacentral`, `koreasouth`, `malaysiawest`, `newzealandnorth`, `northcentralus`, `northeurope`, `norwayeast`, `polandcentral`, `southafricanorth`, `southcentralus`, `southeastasia`, `southindia`, `spaincentral`, `swedencentral`, `switzerlandnorth`, `uaenorth`, `uksouth`, `ukwest`, `westcentralus`, `westus`, `westus2`, `westus3`
+`australiasoutheast`, `austriaeast`, `belgiumcentral`, `brazilsouth`, `canadacentral`, `canadaeast`, `centralindia`, `centralus`, `chilecentral`, `eastasia`, `eastus`, `francecentral`, `indonesiacentral`, `italynorth`, `japaneast`, `japanwest`, `jioindiawest`, `koreacentral`, `koreasouth`, `malaysiawest`, `mexicocentral`, `newzealandnorth`, `northcentralus`, `northeurope`, `norwayeast`, `polandcentral`, `southafricanorth`, `southcentralus`, `southeastasia`, `southindia`, `spaincentral`, `swedencentral`, `switzerlandnorth`, `uaenorth`, `uksouth`, `ukwest`, `westcentralus`, `westus2`, `westus3`
 
 </details>
 

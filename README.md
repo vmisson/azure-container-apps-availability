@@ -11,7 +11,7 @@ automatically) and on an interactive dashboard via GitHub Pages.
 <!-- DASHBOARD:START -->
 ## 🌍 Azure Container Apps availability
 
-> Capacity to create a Container App Environment per region · automatically updated on **2026-10-30 07:46 UTC**.
+> Capacity to create a Container App Environment per region · automatically updated on **2026-10-30 08:51 UTC**.
 
 ![Available](https://img.shields.io/badge/Available-36-22c55e?style=flat-square) ![Saturated](https://img.shields.io/badge/Saturated-2-f59e0b?style=flat-square) ![Error](https://img.shields.io/badge/Error-2-ef4444?style=flat-square) ![Timeout](https://img.shields.io/badge/Timeout-4-a855f7?style=flat-square) ![Total](https://img.shields.io/badge/Total%20tested-44-4f8cff?style=flat-square)
 
@@ -26,17 +26,17 @@ automatically) and on an interactive dashboard via GitHub Pages.
 | :--- | :--- | :--- |
 | 🟠 Saturated | `centralus` | capacity exhausted (AKSCapacityHeavyUsage) |
 | 🟠 Saturated | `germanywestcentral` | capacity exhausted (AKSCapacityHeavyUsage) |
-| 🔴 Error | `australiaeast` | / Running .. \| Running .. \ Running .. - Running .. / Running .. \| Running .. \ Running .. - Running .. / Running .. \| Running .. \ Running .. - Running .. / Running .. \| Running .. \ Running .. - Ru |
-| 🔴 Error | `northcentralus` | ERROR: (ServerTimeout) The request timed out. Diagnostic information: timestamp '20261030T072705Z', subscription id '<null>', tracking id '00000000-0000-0000-0000-000000000000', request correlation id |
-| 🟣 Timeout | `austriaeast` | exceeded 900s |
+| 🔴 Error | `austriaeast` | / Running .. \| Running .. \ Running .. - Running .. / Running .. \| Running .. \ Running .. - Running .. / Running .. \| Running .. \ Running .. - Running .. / Running .. \| Running .. \ Running .. - Ru |
+| 🔴 Error | `malaysiawest` | ERROR: (ManagedEnvironmentNoAvailableCapacityInRegion) No capacity available in this region for provisioning an environment, please try again in another region. |
+| 🟣 Timeout | `australiaeast` | exceeded 900s |
+| 🟣 Timeout | `eastasia` | exceeded 900s |
 | 🟣 Timeout | `eastus2` | exceeded 900s |
-| 🟣 Timeout | `malaysiawest` | exceeded 900s |
 | 🟣 Timeout | `westeurope` | exceeded 900s |
 
 <details>
 <summary>🟢 36 available regions</summary>
 
-`australiasoutheast`, `belgiumcentral`, `brazilsouth`, `canadacentral`, `canadaeast`, `centralindia`, `chilecentral`, `eastasia`, `eastus`, `francecentral`, `indonesiacentral`, `italynorth`, `japaneast`, `japanwest`, `jioindiawest`, `koreacentral`, `koreasouth`, `mexicocentral`, `newzealandnorth`, `northeurope`, `norwayeast`, `polandcentral`, `southafricanorth`, `southcentralus`, `southeastasia`, `southindia`, `spaincentral`, `swedencentral`, `switzerlandnorth`, `uaenorth`, `uksouth`, `ukwest`, `westcentralus`, `westus`, `westus2`, `westus3`
+`australiasoutheast`, `belgiumcentral`, `brazilsouth`, `canadacentral`, `canadaeast`, `centralindia`, `chilecentral`, `eastus`, `francecentral`, `indonesiacentral`, `italynorth`, `japaneast`, `japanwest`, `jioindiawest`, `koreacentral`, `koreasouth`, `mexicocentral`, `newzealandnorth`, `northcentralus`, `northeurope`, `norwayeast`, `polandcentral`, `southafricanorth`, `southcentralus`, `southeastasia`, `southindia`, `spaincentral`, `swedencentral`, `switzerlandnorth`, `uaenorth`, `uksouth`, `ukwest`, `westcentralus`, `westus`, `westus2`, `westus3`
 
 </details>
 

@@ -11,9 +11,9 @@ automatically) and on an interactive dashboard via GitHub Pages.
 <!-- DASHBOARD:START -->
 ## 🌍 Azure Container Apps availability
 
-> Capacity to create a Container App Environment per region · automatically updated on **2026-10-31 20:48 UTC**.
+> Capacity to create a Container App Environment per region · automatically updated on **2026-10-31 21:44 UTC**.
 
-![Available](https://img.shields.io/badge/Available-39-22c55e?style=flat-square) ![Saturated](https://img.shields.io/badge/Saturated-0-f59e0b?style=flat-square) ![Error](https://img.shields.io/badge/Error-1-ef4444?style=flat-square) ![Timeout](https://img.shields.io/badge/Timeout-4-a855f7?style=flat-square) ![Total](https://img.shields.io/badge/Total%20tested-44-4f8cff?style=flat-square)
+![Available](https://img.shields.io/badge/Available-39-22c55e?style=flat-square) ![Saturated](https://img.shields.io/badge/Saturated-0-f59e0b?style=flat-square) ![Error](https://img.shields.io/badge/Error-4-ef4444?style=flat-square) ![Timeout](https://img.shields.io/badge/Timeout-1-a855f7?style=flat-square) ![Total](https://img.shields.io/badge/Total%20tested-44-4f8cff?style=flat-square)
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/history-dark.svg" />
@@ -24,16 +24,16 @@ automatically) and on an interactive dashboard via GitHub Pages.
 
 | Status | Region | Detail |
 | :--- | :--- | :--- |
-| 🔴 Error | `malaysiawest` | ERROR: (ManagedEnvironmentNoAvailableCapacityInRegion) No capacity available in this region for provisioning an environment, please try again in another region. |
+| 🔴 Error | `australiasoutheast` | / Running .. \| Running .. \ Running .. - Running .. / Running .. \| Running .. \ Running .. - Running ..ERROR: The command failed with an unexpected error. Here is the traceback: ERROR: Expecting prop |
+| 🔴 Error | `brazilsouth` | / Running .. \| Running .. \ Running ..ERROR: The command failed with an unexpected error. Here is the traceback: ERROR: Expecting property name enclosed in double quotes: line 1 column 2 (char 1) Tra |
+| 🔴 Error | `canadaeast` | / Running .. \| Running .. \ Running .. - Running .. / Running .. \| Running .. \ Running ..ERROR: The command failed with an unexpected error. Here is the traceback: ERROR: Expecting property name enc |
+| 🔴 Error | `malaysiawest` | / Running .. \| Running .. \ Running .. - Running .. / Running .. \| Running .. \ Running .. - Running .. / Running .. \| Running .. \ Running .. - Running .. / Running .. \| Running .. \ Running .. - Ru |
 | 🟣 Timeout | `australiaeast` | exceeded 900s |
-| 🟣 Timeout | `austriaeast` | exceeded 900s |
-| 🟣 Timeout | `eastus2` | exceeded 900s |
-| 🟣 Timeout | `mexicocentral` | exceeded 900s |
 
 <details>
 <summary>🟢 39 available regions</summary>
 
-`australiasoutheast`, `belgiumcentral`, `brazilsouth`, `canadacentral`, `canadaeast`, `centralindia`, `centralus`, `chilecentral`, `eastasia`, `eastus`, `francecentral`, `germanywestcentral`, `indonesiacentral`, `italynorth`, `japaneast`, `japanwest`, `jioindiawest`, `koreacentral`, `koreasouth`, `newzealandnorth`, `northcentralus`, `northeurope`, `norwayeast`, `polandcentral`, `southafricanorth`, `southcentralus`, `southeastasia`, `southindia`, `spaincentral`, `swedencentral`, `switzerlandnorth`, `uaenorth`, `uksouth`, `ukwest`, `westcentralus`, `westeurope`, `westus`, `westus2`, `westus3`
+`austriaeast`, `belgiumcentral`, `canadacentral`, `centralindia`, `centralus`, `chilecentral`, `eastasia`, `eastus`, `eastus2`, `francecentral`, `germanywestcentral`, `indonesiacentral`, `italynorth`, `japaneast`, `japanwest`, `jioindiawest`, `koreacentral`, `koreasouth`, `mexicocentral`, `newzealandnorth`, `northcentralus`, `northeurope`, `norwayeast`, `polandcentral`, `southafricanorth`, `southcentralus`, `southeastasia`, `southindia`, `spaincentral`, `swedencentral`, `switzerlandnorth`, `uaenorth`, `uksouth`, `ukwest`, `westcentralus`, `westeurope`, `westus`, `westus2`, `westus3`
 
 </details>
 

@@ -11,7 +11,7 @@ automatically) and on an interactive dashboard via GitHub Pages.
 <!-- DASHBOARD:START -->
 ## 🌍 Azure Container Apps availability
 
-> Capacity to create a Container App Environment per region · automatically updated on **2026-11-04 18:47 UTC**.
+> Capacity to create a Container App Environment per region · automatically updated on **2026-11-04 19:46 UTC**.
 
 ![Available](https://img.shields.io/badge/Available-39-22c55e?style=flat-square) ![Saturated](https://img.shields.io/badge/Saturated-1-f59e0b?style=flat-square) ![Error](https://img.shields.io/badge/Error-2-ef4444?style=flat-square) ![Timeout](https://img.shields.io/badge/Timeout-2-a855f7?style=flat-square) ![Total](https://img.shields.io/badge/Total%20tested-44-4f8cff?style=flat-square)
 
@@ -25,7 +25,7 @@ automatically) and on an interactive dashboard via GitHub Pages.
 | Status | Region | Detail |
 | :--- | :--- | :--- |
 | 🟠 Saturated | `germanywestcentral` | capacity exhausted (AKSCapacityHeavyUsage) |
-| 🔴 Error | `eastus2` | ERROR: (ManagedEnvironmentNoAvailableCapacityInRegion) No capacity available in this region for provisioning an environment, please try again in another region. |
+| 🔴 Error | `centralus` | / Running .. \| Running .. \ Running .. - Running .. / Running ..ERROR: The command failed with an unexpected error. Here is the traceback: ERROR: Expecting property name enclosed in double quotes: li |
 | 🔴 Error | `malaysiawest` | ERROR: (ManagedEnvironmentNoAvailableCapacityInRegion) No capacity available in this region for provisioning an environment, please try again in another region. |
 | 🟣 Timeout | `australiaeast` | exceeded 900s |
 | 🟣 Timeout | `westeurope` | exceeded 900s |
@@ -33,7 +33,7 @@ automatically) and on an interactive dashboard via GitHub Pages.
 <details>
 <summary>🟢 39 available regions</summary>
 
-`australiasoutheast`, `austriaeast`, `belgiumcentral`, `brazilsouth`, `canadacentral`, `canadaeast`, `centralindia`, `centralus`, `chilecentral`, `eastasia`, `eastus`, `francecentral`, `indonesiacentral`, `italynorth`, `japaneast`, `japanwest`, `jioindiawest`, `koreacentral`, `koreasouth`, `mexicocentral`, `newzealandnorth`, `northcentralus`, `northeurope`, `norwayeast`, `polandcentral`, `southafricanorth`, `southcentralus`, `southeastasia`, `southindia`, `spaincentral`, `swedencentral`, `switzerlandnorth`, `uaenorth`, `uksouth`, `ukwest`, `westcentralus`, `westus`, `westus2`, `westus3`
+`australiasoutheast`, `austriaeast`, `belgiumcentral`, `brazilsouth`, `canadacentral`, `canadaeast`, `centralindia`, `chilecentral`, `eastasia`, `eastus`, `eastus2`, `francecentral`, `indonesiacentral`, `italynorth`, `japaneast`, `japanwest`, `jioindiawest`, `koreacentral`, `koreasouth`, `mexicocentral`, `newzealandnorth`, `northcentralus`, `northeurope`, `norwayeast`, `polandcentral`, `southafricanorth`, `southcentralus`, `southeastasia`, `southindia`, `spaincentral`, `swedencentral`, `switzerlandnorth`, `uaenorth`, `uksouth`, `ukwest`, `westcentralus`, `westus`, `westus2`, `westus3`
 
 </details>
 
